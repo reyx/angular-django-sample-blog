@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'front-end/styles.css' %}">
+{% endblock %}
+ 
+{% block content %} 
+  <app-root>Loading the app...</app-root>
+  <script type="text/javascript" src="{% static 'front-end/runtime.js' %}"></script>
+  <script type="text/javascript" src="{% static 'front-end/polyfills.js' %}"></script>
+  <script type="text/javascript" src="{% static 'front-end/vendor.js' %}"></script>
+  <script type="text/javascript" src="{% static 'front-end/main.js' %}"></script> 
+{% endblock %}
